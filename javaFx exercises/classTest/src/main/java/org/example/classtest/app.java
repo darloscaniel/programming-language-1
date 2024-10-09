@@ -11,7 +11,7 @@ public class app extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(app.class.getResource("menuPrincipal.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 240, 490);
+        Scene scene = new Scene(fxmlLoader.load(), 318, 565);
         stage.setTitle("Menu Testa Classe");
         stage.setScene(scene);
         stage.show();

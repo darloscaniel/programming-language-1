@@ -2,25 +2,32 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="489.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.classtest.MenuController">
+<Pane prefHeight="565.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.classtest.MenuController">
    <children>
-      <Button fx:id="btn_oculos" layoutX="87.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="67.0" text="Óculos" />
-      <Button fx:id="btn_sapato" layoutX="87.0" layoutY="407.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="67.0" text="Sapato" />
-      <Button fx:id="btn_bandeira" layoutX="87.0" layoutY="64.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="67.0" text="Bandeira" />
-      <Button fx:id="btn_caderno" layoutX="87.0" layoutY="106.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="67.0" text="Caderno" />
-      <Button fx:id="btn_camisa" layoutX="87.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="67.0" text="Camisa" />
-      <Button fx:id="btn_carro" layoutX="87.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="67.0" text="Carro" />
-      <Button fx:id="btn_flor" layoutX="87.0" layoutY="236.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="67.0" text="Flor" />
-      <Button fx:id="btn_fruta" layoutX="87.0" layoutY="278.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="67.0" text="Fruta" />
-      <Button fx:id="btn_mamifero" layoutX="87.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Mamifero" />
-      <Button fx:id="btn_passaro" layoutX="87.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="67.0" text="Pássaro" />
-      <Label layoutX="35.0" layoutY="24.0" text="MENU TESTA CLASSE">
+      <Button fx:id="btn_oculos" layoutX="90.0" layoutY="526.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="132.0" text="Óculos" />
+      <Button fx:id="btn_sapato" layoutX="90.0" layoutY="483.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="132.0" text="Sapato" />
+      <Button fx:id="btn_bandeira" layoutX="90.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="138.0" text="Bandeira" />
+      <Button fx:id="btn_caderno" layoutX="91.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="132.0" text="Caderno" />
+      <Button fx:id="btn_camisa" layoutX="90.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="132.0" text="Camisa" />
+      <Button fx:id="btn_carro" layoutX="90.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="132.0" text="Carro" />
+      <Button fx:id="btn_flor" layoutX="90.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="132.0" text="Flor" />
+      <Button fx:id="btn_fruta" layoutX="90.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="132.0" text="Fruta" />
+      <Button fx:id="btn_mamifero" layoutX="90.0" layoutY="398.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="132.0" text="Mamifero" />
+      <Button fx:id="btn_passaro" layoutX="90.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="132.0" text="Pássaro" />
+      <Label layoutX="74.0" layoutY="14.0" text="MENU TESTA CLASSE">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
+      <ImageView fitHeight="90.0" fitWidth="138.0" layoutX="114.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens%20Exemplos/rock.jpg" />
+         </image>
+      </ImageView>
    </children>
 </Pane>

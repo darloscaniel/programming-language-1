@@ -3,16 +3,23 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="306.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.classtest.MamiferoController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.classtest.MamiferoController">
    <children>
       <Label layoutX="123.0" layoutY="21.0" text="Mamifero" />
-      <TextField fx:id="txt_pais" layoutX="74.0" layoutY="66.0" promptText="Especie" />
-      <TextField fx:id="txt_cor" layoutX="74.0" layoutY="100.0" promptText="Tamanho" />
-      <TextField fx:id="txt_desc" layoutX="74.0" layoutY="141.0" promptText="Habitat" />
-      <Button fx:id="btn_comer" layoutX="18.0" layoutY="202.0" mnemonicParsing="false" onAction="#comer" prefHeight="25.0" prefWidth="112.0" text="Comer" />
-      <Button fx:id="btn_dormir" layoutX="167.0" layoutY="202.0" mnemonicParsing="false" onAction="#dormir" prefHeight="25.0" prefWidth="112.0" text="Dormir" />
-      <Button fx:id="btn_envelhecer" layoutX="93.0" layoutY="249.0" mnemonicParsing="false" onAction="#envelhecer" prefHeight="25.0" prefWidth="112.0" text="Envelhecer" />
+      <TextField fx:id="txt_pais" layoutX="71.0" layoutY="210.0" promptText="Especie" />
+      <TextField fx:id="txt_cor" layoutX="71.0" layoutY="244.0" promptText="Tamanho" />
+      <TextField fx:id="txt_desc" layoutX="71.0" layoutY="285.0" promptText="Habitat" />
+      <Button fx:id="btn_comer" layoutX="15.0" layoutY="346.0" mnemonicParsing="false" onAction="#comer" prefHeight="25.0" prefWidth="112.0" text="Comer" />
+      <Button fx:id="btn_dormir" layoutX="164.0" layoutY="346.0" mnemonicParsing="false" onAction="#dormir" prefHeight="25.0" prefWidth="112.0" text="Dormir" />
+      <Button fx:id="btn_envelhecer" layoutX="90.0" layoutY="393.0" mnemonicParsing="false" onAction="#envelhecer" prefHeight="25.0" prefWidth="112.0" text="Envelhecer" />
+      <ImageView fitHeight="102.0" fitWidth="164.0" layoutX="77.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens%20Exemplos/Mamifero.jpg" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
