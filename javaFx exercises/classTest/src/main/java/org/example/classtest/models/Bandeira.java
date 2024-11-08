@@ -4,17 +4,29 @@ public class Bandeira {
     private String pais;
     private String cor;
     private String descricao;
+    private int IdBandeira;
 
 
-    public Bandeira(String pais, String cor, String descricao) {
+    public Bandeira(String pais, String cor, String descricao,int id_bandeira) {
         this.pais = pais;
 
         this.cor = cor;
 
         this.descricao = descricao;
+
+        this.IdBandeira = id_bandeira;
     }
 
     public Bandeira(String pais, String cor) {
+        this.cor = cor;
+        this.pais = pais;
+    }
+
+    public Bandeira(){
+
+    }
+
+    public Bandeira(String pais, String cor, String descricao) {
     }
 
     public String mostrarDescricao(){

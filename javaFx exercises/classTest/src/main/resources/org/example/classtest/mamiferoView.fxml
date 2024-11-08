@@ -18,7 +18,7 @@
       <Button fx:id="btn_envelhecer" layoutX="90.0" layoutY="393.0" mnemonicParsing="false" onAction="#envelhecer" prefHeight="25.0" prefWidth="112.0" text="Envelhecer" />
       <ImageView fitHeight="102.0" fitWidth="164.0" layoutX="77.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Imagens%20Exemplos/Mamifero.jpg" />
+            <Image url="@../assets/Mamifero.jpg" />
          </image>
       </ImageView>
    </children>

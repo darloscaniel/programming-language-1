@@ -18,7 +18,7 @@
       <Button fx:id="btn_voar" layoutX="94.0" layoutY="391.0" mnemonicParsing="false" onAction="#voar" prefHeight="25.0" prefWidth="112.0" text="Voar" />
       <ImageView fitHeight="112.0" fitWidth="182.0" layoutX="58.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Imagens%20Exemplos/passaro.jpg" />
+            <Image url="@../assets/passaro.jpg" />
          </image>
       </ImageView>
    </children>

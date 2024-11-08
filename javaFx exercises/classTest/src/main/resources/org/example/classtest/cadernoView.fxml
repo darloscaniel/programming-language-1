@@ -18,7 +18,7 @@
       <Button fx:id="btn_fechar" layoutX="98.0" layoutY="379.0" mnemonicParsing="false" onAction="#fecharJanela" prefHeight="25.0" prefWidth="112.0" text="Fechar" />
       <ImageView fitHeight="113.0" fitWidth="149.0" layoutX="86.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Imagens%20Exemplos/Caderno.jpg" />
+            <Image url="@../assets/Caderno.jpg" />
          </image>
       </ImageView>
    </children>

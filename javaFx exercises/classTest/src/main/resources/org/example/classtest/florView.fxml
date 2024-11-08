@@ -18,7 +18,7 @@
       <Button fx:id="btn_prodPolen" layoutX="93.0" layoutY="392.0" mnemonicParsing="false" onAction="#ProdPolen" prefHeight="25.0" prefWidth="112.0" text="Produzir Polen" />
       <ImageView fitHeight="115.0" fitWidth="199.0" layoutX="48.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Imagens%20Exemplos/flor.png" />
+            <Image url="@../assets/flor.png" />
          </image>
       </ImageView>
    </children>

@@ -18,7 +18,7 @@
       <Button fx:id="btn_semear" layoutX="94.0" layoutY="383.0" mnemonicParsing="false" onAction="#semear" prefHeight="25.0" prefWidth="112.0" text="Semear" />
       <ImageView fitHeight="118.0" fitWidth="142.0" layoutX="79.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Imagens%20Exemplos/Fruta.jpg" />
+            <Image url="@../assets/Fruta.jpg" />
          </image>
       </ImageView>
    </children>

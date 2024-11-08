@@ -18,7 +18,7 @@
       <Button fx:id="btn_limpar" layoutX="94.0" layoutY="402.0" mnemonicParsing="false" onAction="#limpar" prefHeight="25.0" prefWidth="112.0" text="Limpar" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Imagens%20Exemplos/sapatos.jpg" />
+            <Image url="@../assets/sapatos.jpg" />
          </image>
       </ImageView>
    </children>

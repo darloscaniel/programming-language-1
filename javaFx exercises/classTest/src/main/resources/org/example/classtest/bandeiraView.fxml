@@ -18,7 +18,7 @@
       <Button fx:id="btn_curiosidade" layoutX="94.0" layoutY="367.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Curiosidade" />
       <ImageView fitHeight="146.0" fitWidth="209.0" layoutX="46.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Imagens%20Exemplos/Bandeira.jpg" />
+            <Image url="@../assets/Bandeira.jpg" />
          </image>
       </ImageView>
    </children>
