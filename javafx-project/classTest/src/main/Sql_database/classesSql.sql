@@ -2,11 +2,12 @@ create database if not exists pl_1;
 
 use pl_1;
 
+
 create table bandeira(
-id_bandeira int auto_increment primary key,
 pais varchar(20) not null,
-cor varchar (20) not null,
-descricao varchar (50) not null);
+cor varchar (50) not null,
+descricao varchar (50) not null,
+id_bandeira int auto_increment primary key);
 
 create table caderno(
 id_caderno int auto_increment primary key,
@@ -25,7 +26,8 @@ id_carro int auto_increment primary key,
 modelo varchar(20) not null,
 marca varchar(20) not null,
 cor varchar (20) not null,
-placa varchar(7) not null);
+placa varchar(7) not null,
+CONSTRAINT chk_placa_format CHECK (placa REGEXP '^[A-Z]{3}[0-9]{4}$|^[A-Z]{3}[0-9][A-Z][0-9]{2}$'));
 
 create table flor(
 id_flor int auto_increment primary key,
@@ -66,10 +68,8 @@ cor varchar(20) not null,
 tipo varchar(20) not null,
 marca varchar(20) not null);
 
-CREATE USER 'user'@'localhost' IDENTIFIED BY '1234';
-GRANT INSERT, SELECT, UPDATE, DELETE ON pl_1.* TO 'user'@'localhost';
-
-COMMIT;
+CREATE USER 'user_1'@'localhost' IDENTIFIED BY '1234';
+GRANT INSERT, SELECT, UPDATE, DELETE ON pl_1.* TO 'user_1'@'localhost';
 
 
 
