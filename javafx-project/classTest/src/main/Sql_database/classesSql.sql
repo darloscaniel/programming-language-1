@@ -51,8 +51,7 @@ create table oculos(
 id_oculos int auto_increment primary key,
 cor varchar(20) not null,
 tipo varchar(20) not null,
-material varchar(20) not null,
-grau boolean not null);
+material varchar(20) not null);
 
 create table passaro(
 id_passaro int auto_increment primary key,
@@ -63,10 +62,8 @@ tamanho double not null);
 create table sapato(
 id_sapato int auto_increment primary key,
 tamanho double not null,
-preco double not null,
 cor varchar(20) not null,
-tipo varchar(20) not null,
-marca varchar(20) not null);
+tipo varchar(20) not null);
 
 CREATE USER 'user_1'@'localhost' IDENTIFIED BY '1234';
 GRANT INSERT, SELECT, UPDATE, DELETE ON pl_1.* TO 'user_1'@'localhost';
