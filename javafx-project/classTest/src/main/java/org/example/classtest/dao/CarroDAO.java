@@ -89,7 +89,7 @@ public class CarroDAO extends ConnectionDAO {
 
         try {
             con = getConnection();
-            String updateSql = "UPDATE camisa SET cor = ?, modelo = ?, marca = ?, placa = ? WHERE id_camisa = ?";
+            String updateSql = "UPDATE carro SET cor = ?, modelo = ?, marca = ?, placa = ? WHERE id_carro = ?";
             PreparedStatement pst = con.prepareStatement(updateSql);
             pst.setString(1, cor);
             pst.setString(2, modelo);
@@ -121,7 +121,7 @@ public class CarroDAO extends ConnectionDAO {
     // Método para verificar se uma entidade já está cadastrada com base em uma coluna e valor
     public boolean isEntityCadastrada(String coluna, String valor) {
         Connection con = null;
-        String query = "SELECT COUNT(*) AS total FROM camisa WHERE " + coluna + " = ?";
+        String query = "SELECT COUNT(*) AS total FROM carro WHERE " + coluna + " = ?";
 
         try {
             con = getConnection();

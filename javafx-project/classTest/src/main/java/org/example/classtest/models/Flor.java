@@ -17,6 +17,12 @@ public class Flor {
 
     }
 
+    public Flor(String especie, String cor, double tamanho) {
+        this.cor = cor;
+        this.especie = especie;
+        this.tamanho = tamanho;
+    }
+
     public String florescer(){
 
         return ("FLOR");

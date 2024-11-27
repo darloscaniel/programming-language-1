@@ -14,6 +14,13 @@ public class Passaro {
         this.id_passaro = id_passaro;
     }
 
+    public Passaro(String especie, String nome, double tamanho) {
+        this.especie = especie;
+        this.nome = nome;
+        this.tamanho = tamanho;
+
+    }
+
     public String comer(){
 
        return ("Nham nham");

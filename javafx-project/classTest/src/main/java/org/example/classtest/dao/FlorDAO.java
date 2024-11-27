@@ -16,7 +16,7 @@ public class FlorDAO extends ConnectionDAO {
 
         try {
             con = getConnection();
-            String insert_sql = "INSERT INTO flor (especie, cor, tamanho) VALUES (?, ?, ?,?)";
+            String insert_sql = "INSERT INTO flor (especie, cor, tamanho) VALUES (?, ?, ?)";
             PreparedStatement pst = con.prepareStatement(insert_sql, Statement.RETURN_GENERATED_KEYS);
             pst.setString(1, especie);
             pst.setString(2, cor);

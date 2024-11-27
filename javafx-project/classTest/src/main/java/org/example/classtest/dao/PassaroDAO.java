@@ -54,7 +54,7 @@ public class PassaroDAO extends ConnectionDAO {
             ResultSet rs = pst.executeQuery();
 
             while (rs.next()) {
-                int id_passaro = rs.getInt("id_mamifero");
+                int id_passaro = rs.getInt("id_passaro");
                 String especie = rs.getString("especie");
                 double tamanho = rs.getDouble("tamanho");
                 String nome = rs.getString("nome");

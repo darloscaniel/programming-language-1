@@ -24,11 +24,11 @@
          </image>
       </ImageView>
       <Button fx:id="btn_cadastrar" layoutX="94.0" layoutY="309.0" mnemonicParsing="false" onAction="#lavarCamisa" prefHeight="25.0" prefWidth="112.0" text="Cadastrar" />
-      <TableView layoutX="285.0" layoutY="62.0" prefHeight="243.0" prefWidth="323.0">
+      <TableView fx:id="tableCamisas" layoutX="285.0" layoutY="62.0" prefHeight="243.0" prefWidth="323.0">
         <columns>
-          <TableColumn prefWidth="103.0" text="Cor" />
-          <TableColumn minWidth="8.0" prefWidth="112.0" text="Tamanho" />
-            <TableColumn prefWidth="106.0" text="Tipo" />
+          <TableColumn fx:id="colCor" prefWidth="103.0" text="Cor" />
+          <TableColumn fx:id="colTamanho" minWidth="8.0" prefWidth="112.0" text="Tamanho" />
+            <TableColumn fx:id="colTipo" prefWidth="106.0" text="Tipo" />
         </columns>
       </TableView>
    </children>

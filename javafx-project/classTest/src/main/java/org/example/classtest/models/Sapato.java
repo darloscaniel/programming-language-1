@@ -5,29 +5,26 @@ public class Sapato {
     private double tamanho;
     private String cor;
     private String tipo;
-    private String marca;
-    private double preco;
     private int id_sapato;
 
-    public Sapato(double tamanho, String cor, String tipo, String marca, double preco, int id_sapato) {
+    public Sapato(double tamanho, String cor, String tipo, int id_sapato) {
 
         this.tamanho = tamanho;
         this.cor = cor;
         this.tipo = tipo;
-        this.marca = marca;
-        this.preco = preco;
+        this.id_sapato = id_sapato;
+    }
 
+    public Sapato(double tamanho, String cor, String tipo) {
+
+            this.tamanho = tamanho;
+            this.cor = cor;
+            this.tipo = tipo;
     }
 
     public int aplicarDesconto(int desconto){
 
         return (desconto);
-
-    }
-
-    public String mostrarPreco(){
-
-        return("O preço do sapato "+ marca + "é" + preco);
 
     }
 
@@ -60,22 +57,6 @@ public class Sapato {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public double getPreco() {
-        return preco;
-    }
-
-    public void setPreco(double preco) {
-        this.preco = preco;
     }
 
     public int getId_sapato() {

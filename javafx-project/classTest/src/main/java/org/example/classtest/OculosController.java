@@ -1,10 +1,15 @@
 package org.example.classtest;
 
-import javafx.event.ActionEvent;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+import org.example.classtest.dao.OculosDAO;
+import org.example.classtest.models.Oculos;
+
+import java.sql.SQLException;
+import java.util.List;
 
 public class OculosController {
 
@@ -18,47 +23,112 @@ public class OculosController {
     private Button btn_trocar;
 
     @FXML
+    private Button btn_cadastrar;
+
+    @FXML
     private TextField txt_cor;
 
     @FXML
-    private TextField txt_desc;
+    private TextField txt_tipo;
 
     @FXML
-    private TextField txt_pais;
+    private TextField txt_material;
 
-    // Validação para campos em branco
-    private boolean validarCampos() {
-        if (txt_cor.getText().isEmpty() || txt_desc.getText().isEmpty() || txt_pais.getText().isEmpty()) {
-            mostrarAlerta("Erro", "Todos os campos devem ser preenchidos.");
-            return false;
-        }
-        return true;
+    @FXML
+    private TableView<Oculos> tableOculos;
+
+    @FXML
+    private TableColumn<Oculos, String> colCor;
+
+    @FXML
+    private TableColumn<Oculos, String> colTipo;
+
+    @FXML
+    private TableColumn<Oculos, String> colMaterial;
+
+    private final OculosDAO oculosDAO = new OculosDAO();
+    private final ObservableList<Oculos> oculosList = FXCollections.observableArrayList();
+
+    @FXML
+    public void initialize() throws SQLException {
+        configurarTabela();
+        carregarOculos();
+
+        btn_cadastrar.setOnAction(event -> cadastrarOculos());
+        btn_ajustar.setOnAction(event -> ajustarOculos());
+        btn_limpar.setOnAction(event -> limparOculos());
+        btn_trocar.setOnAction(event -> trocarLentes());
+    }
+
+    private void configurarTabela() {
+        colCor.setCellValueFactory(new PropertyValueFactory<>("cor"));
+        colTipo.setCellValueFactory(new PropertyValueFactory<>("tipo"));
+        colMaterial.setCellValueFactory(new PropertyValueFactory<>("material"));
+        tableOculos.setItems(oculosList);
+    }
+
+    private void carregarOculos() throws SQLException {
+        List<Oculos> oculos = oculosDAO.getOculos();
+        oculosList.setAll(oculos);
     }
 
     @FXML
-    void ajustarOculos(ActionEvent event) {
-        if (validarCampos()) {
-            mostrarAlerta("Óculos Ajustados", "Seus óculos estão agora perfeitamente ajustados!");
+    private void cadastrarOculos() {
+        String cor = txt_cor.getText();
+        String tipo = txt_tipo.getText();
+        String material = txt_material.getText();
+
+        // Validação para campos em branco
+        if (cor.isEmpty() || tipo.isEmpty() || material.isEmpty()) {
+            mostrarAlerta("Erro", "Preencha todos os campos!", Alert.AlertType.ERROR);
+            return;
+        }
+
+        // Criação do objeto Óculos e cadastro no banco de dados
+        Oculos oculos = new Oculos(cor, tipo, material);
+        oculosDAO.criarOculos(oculos.getCor(), oculos.getTipo(), oculos.getMaterial());
+        mostrarAlerta("Sucesso", "Óculos cadastrados com sucesso!", Alert.AlertType.INFORMATION);
+
+        try {
+            carregarOculos();
+        } catch (SQLException e) {
+            mostrarAlerta("Erro", "Erro ao carregar os óculos.", Alert.AlertType.ERROR);
         }
     }
 
     @FXML
-    void limparOculos(ActionEvent event) {
-        if (validarCampos()) {
-            mostrarAlerta("Óculos Limpos", "Ótimo! Seus óculos estão limpos e prontos para uso.");
+    private void ajustarOculos() {
+        Oculos oculosSelecionado = tableOculos.getSelectionModel().getSelectedItem();
+        if (oculosSelecionado != null) {
+            mostrarAlerta("Óculos Ajustados", "Seus óculos estão agora perfeitamente ajustados!", Alert.AlertType.INFORMATION);
+        } else {
+            mostrarAlerta("Erro", "Selecione um óculos para ajustar.", Alert.AlertType.ERROR);
         }
     }
 
     @FXML
-    void trocarLentes(ActionEvent event) {
-        if (validarCampos()) {
-            mostrarAlerta("Lentes Trocadas", "As lentes foram trocadas com sucesso!");
+    private void limparOculos() {
+        Oculos oculosSelecionado = tableOculos.getSelectionModel().getSelectedItem();
+        if (oculosSelecionado != null) {
+            mostrarAlerta("Óculos Limpos", "Ótimo! Seus óculos estão limpos e prontos para uso.", Alert.AlertType.INFORMATION);
+        } else {
+            mostrarAlerta("Erro", "Selecione um óculos para limpar.", Alert.AlertType.ERROR);
         }
     }
 
-    // Método utilitário para exibir os popups
-    private void mostrarAlerta(String titulo, String mensagem) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+    @FXML
+    private void trocarLentes() {
+        Oculos oculosSelecionado = tableOculos.getSelectionModel().getSelectedItem();
+        if (oculosSelecionado != null) {
+            mostrarAlerta("Lentes Trocadas", "As lentes foram trocadas com sucesso!", Alert.AlertType.INFORMATION);
+        } else {
+            mostrarAlerta("Erro", "Selecione um óculos para trocar as lentes.", Alert.AlertType.ERROR);
+        }
+    }
+
+    // Método para mostrar os alertas
+    private void mostrarAlerta(String titulo, String mensagem, Alert.AlertType tipo) {
+        Alert alert = new Alert(tipo);
         alert.setTitle(titulo);
         alert.setHeaderText(null);
         alert.setContentText(mensagem);

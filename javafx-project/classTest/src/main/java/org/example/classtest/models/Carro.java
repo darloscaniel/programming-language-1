@@ -19,6 +19,13 @@ public class Carro {
         this.id_carro = id_carro;
     }
 
+    public Carro(String modelo, String marca, String cor, String placa) {
+        this.modelo = modelo;
+        this.marca = marca;
+        this.cor = cor;
+        this.placa = placa;
+    }
+
     public String ligar(){
 
         return ("VRUM VRUM");

@@ -5,17 +5,22 @@ public class Oculos {
     private String cor;
     private String tipo;
     private String material;
-    private boolean grau;
     private int id_oculos;
 
-    public Oculos(String cor, String tipo, String material, boolean grau, int id_oculos) {
+    public Oculos(String cor, String tipo, String material, int id_oculos) {
 
         this.cor = cor;
         this.tipo = tipo;
         this.material = material;
-        this.grau = grau;
         this.id_oculos = id_oculos;
 
+    }
+
+    public Oculos(String cor, String tipo, String material) {
+
+            this.cor = cor;
+            this.tipo = tipo;
+            this.material = material;
     }
 
     public String limpar(){
@@ -56,14 +61,6 @@ public class Oculos {
 
     public void setMaterial(String material) {
         this.material = material;
-    }
-
-    public boolean isGrau() {
-        return grau;
-    }
-
-    public void setGrau(boolean grau) {
-        this.grau = grau;
     }
 
     public int getId_oculos() {

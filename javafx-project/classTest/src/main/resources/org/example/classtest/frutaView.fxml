@@ -12,9 +12,9 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.classtest.FrutaController">
    <children>
       <Label layoutX="136.0" layoutY="20.0" text="Fruta" />
-      <TextField fx:id="txt_pais" layoutX="75.0" layoutY="200.0" promptText="Nome" />
-      <TextField fx:id="txt_cor" layoutX="75.0" layoutY="234.0" promptText="Tamanho" />
-      <TextField fx:id="txt_desc" layoutX="75.0" layoutY="275.0" promptText="Tipo" />
+      <TextField fx:id="txt_nome" layoutX="75.0" layoutY="200.0" promptText="Nome" />
+      <TextField fx:id="txt_tamanho" layoutX="75.0" layoutY="234.0" promptText="Tamanho" />
+      <TextField fx:id="txt_tipo" layoutX="75.0" layoutY="275.0" promptText="Tipo" />
       <Button fx:id="btn_amadurecer" layoutX="329.0" layoutY="383.0" mnemonicParsing="false" onAction="#amadurecerFruta" prefHeight="25.0" prefWidth="112.0" text="Amadurecer" />
       <Button fx:id="btn_apodrecer" layoutX="548.0" layoutY="383.0" mnemonicParsing="false" onAction="#apodrecerFruta" prefHeight="25.0" prefWidth="112.0" text="Apodrecer" />
       <Button fx:id="btn_semear" layoutX="93.0" layoutY="383.0" mnemonicParsing="false" onAction="#semear" prefHeight="25.0" prefWidth="112.0" text="Semear" />
@@ -23,12 +23,12 @@
             <Image url="@../assets/Fruta.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="btn_cadastrar" layoutX="93.0" layoutY="320.0" mnemonicParsing="false" onAction="#semear" prefHeight="25.0" prefWidth="112.0" text="Cadastrar" />
-      <TableView layoutX="329.0" layoutY="24.0" prefHeight="323.0" prefWidth="422.0">
+      <Button fx:id="btn_cadastrar" layoutX="93.0" layoutY="320.0" mnemonicParsing="false" onAction="#cadastrarFruta" prefHeight="25.0" prefWidth="112.0" text="Cadastrar" />
+      <TableView fx:id="tableFrutas" layoutX="329.0" layoutY="24.0" prefHeight="323.0" prefWidth="422.0">
         <columns>
-          <TableColumn prefWidth="153.0" text="Nome" />
-          <TableColumn prefWidth="128.0" text="Tamanho" />
-            <TableColumn prefWidth="140.0" text="Tipo" />
+          <TableColumn fx:id="colNome" prefWidth="153.0" text="Nome" />
+          <TableColumn fx:id="colTamanho" prefWidth="128.0" text="Tamanho" />
+            <TableColumn fx:id="colTipo" prefWidth="140.0" text="Tipo" />
         </columns>
       </TableView>
    </children>

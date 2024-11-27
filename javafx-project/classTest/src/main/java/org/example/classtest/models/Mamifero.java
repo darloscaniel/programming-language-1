@@ -16,6 +16,12 @@ public class Mamifero {
 
     }
 
+    public Mamifero(String especie, String habitat, double tamanho) {
+        this.especie = especie;
+        this.habitat = habitat;
+        this.tamanho = tamanho;
+    }
+
     public String comer(){
         return ("nham nham");
     }

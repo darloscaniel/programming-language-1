@@ -16,6 +16,12 @@ public class Fruta {
         this.id_fruta = id_fruta;
     }
 
+    public Fruta(String tipo, String tamanho, String nome) {
+        this.tipo = tipo;
+        this.tamanho = tamanho;
+        this.nome = nome;
+    }
+
     public String amadurecer(){
 
         return ("desverdeando...");

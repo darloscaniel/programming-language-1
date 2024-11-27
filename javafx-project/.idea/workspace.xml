@@ -5,30 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4cac8fd-8f4e-4126-8213-a30118bafe66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/BandeiraDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/CadernoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/ConnectionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/trocarTamanhoSapato.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classTest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/BandeiraController.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/BandeiraController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/CadernoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/CadernoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/app.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Bandeira.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Bandeira.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Caderno.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Caderno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/bandeiraView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/bandeiraView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/cadernoView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/cadernoView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/CamisaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/CamisaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/CarroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/CarroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/FlorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/FlorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/FrutaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/FrutaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/MamiferoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/MamiferoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/OculosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/OculosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/PassaroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/PassaroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/SapatoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/SapatoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/CarroDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/CarroDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/FlorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/FlorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/OculosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/OculosDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/PassaroDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/PassaroDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/SapatoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/dao/SapatoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Flor.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Flor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Fruta.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Fruta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Mamifero.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Mamifero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Oculos.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Oculos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Passaro.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Passaro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Sapato.java" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/java/org/example/classtest/models/Sapato.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/camisaView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/camisaView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/carroView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/carroView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/florView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/florView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/frutaView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/frutaView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/mamiferoView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/mamiferoView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/menuPrincipal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/menuPrincipal.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/oculosView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/oculosView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/passaroView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/passaroView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/sapatoView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/sapatoView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classTest/src/main/resources/org/example/classtest/trocarTamanhoSapato.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,24 +71,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.app.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/carlo/Documents/GitHub/pacer-assessment-system",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/carlo/Documents/GitHub/programming-language-1/javafx-project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\carlo\Documents\GitHub\programming-language-1\javaFx exercises\classTest\src\main\Sql_database" />
@@ -141,6 +147,8 @@
       <workItem from="1731779345013" duration="1027000" />
       <workItem from="1731780421143" duration="3140000" />
       <workItem from="1732626429429" duration="11498000" />
+      <workItem from="1732647673013" duration="2581000" />
+      <workItem from="1732721012460" duration="14137000" />
     </task>
     <servers />
   </component>

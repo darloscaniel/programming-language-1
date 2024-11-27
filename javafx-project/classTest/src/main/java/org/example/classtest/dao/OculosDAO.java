@@ -10,18 +10,17 @@ import java.util.List;
 public class OculosDAO extends ConnectionDAO {
 
     // CREATE
-    public int criarOculos(String cor, String tipo, String material, boolean grau) {
+    public int criarOculos(String cor, String tipo, String material) {
         int id_oculos = -1;
         Connection con = null;
 
         try {
             con = getConnection();
-            String insert_sql = "INSERT INTO oculos (cor, tipo, material, grau) VALUES (?, ?, ?, ?)";
+            String insert_sql = "INSERT INTO oculos (cor, tipo, material) VALUES (?, ?, ?)";
             PreparedStatement pst = con.prepareStatement(insert_sql, Statement.RETURN_GENERATED_KEYS);
             pst.setString(1, cor);
             pst.setString(2, tipo);
             pst.setString(3, material);
-            pst.setBoolean(4, grau);
             pst.executeUpdate();
 
             ResultSet rs = pst.getGeneratedKeys();
@@ -60,8 +59,7 @@ public class OculosDAO extends ConnectionDAO {
                 String cor = rs.getString("cor");
                 String tipo = rs.getString("tipo");
                 String material = rs.getString("material");
-                boolean grau = rs.getBoolean("grau");
-                Oculos oculos = new Oculos(cor, tipo, material, grau, id_oculos);
+                Oculos oculos = new Oculos(cor, tipo, material, id_oculos);
                 oculoss.add(oculos);
             }
 
@@ -81,19 +79,18 @@ public class OculosDAO extends ConnectionDAO {
     }
 
     // UPDATE
-    public boolean atualizarOculos(int id_oculos, String cor, String tipo, String material, boolean grau) {
+    public boolean atualizarOculos(int id_oculos, String cor, String tipo, String material) {
         Connection con = null;
         boolean sucesso;
 
         try {
             con = getConnection();
-            String updateSql = "UPDATE oculos SET cor = ?, tipo = ?, material = ?, grau = ? WHERE id_mamifero = ?";
+            String updateSql = "UPDATE oculos SET cor = ?, tipo = ?, material = ? WHERE id_mamifero = ?";
             PreparedStatement pst = con.prepareStatement(updateSql);
             pst.setString(1, cor);
             pst.setString(2, tipo);
             pst.setString(3, material);
-            pst.setBoolean(4, grau);
-            pst.setInt(5, id_oculos);
+            pst.setInt(4, id_oculos);
 
             int rowsAffected = pst.executeUpdate();
             sucesso = true;
