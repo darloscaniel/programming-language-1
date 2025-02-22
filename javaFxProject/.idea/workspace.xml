@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4cac8fd-8f4e-4126-8213-a30118bafe66" name="Changes" comment="" />
+    <list default="true" id="a4cac8fd-8f4e-4126-8213-a30118bafe66" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +50,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/carlo/Documents/GitHub/programming-language-1/javafx-project",
+    "last_opened_file_path": "C:/Users/carlo/Desktop/lab1-main/projeto",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +63,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\carlo\Documents\GitHub\programming-language-1\javaFx exercises\classTest\src\main\Sql_database" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\carlo\Documents\GitHub\programming-language-1\javafx-project\classTest\src\main\Sql_database" />
     </key>
   </component>
   <component name="RunManager">
@@ -115,7 +120,10 @@
       <workItem from="1731775958822" duration="1278000" />
       <workItem from="1731779345013" duration="1027000" />
       <workItem from="1731780421143" duration="3140000" />
-      <workItem from="1732626429429" duration="20008000" />
+      <workItem from="1732626429429" duration="11498000" />
+      <workItem from="1732647673013" duration="2581000" />
+      <workItem from="1732721012460" duration="14266000" />
+      <workItem from="1732740628933" duration="6380000" />
     </task>
     <servers />
   </component>
