@@ -29,4 +29,7 @@ By using JDBC, we were able to store and retrieve data efficiently, making our a
 
  **[JavaFX Project](https://github.com/darloscaniel/programming-language-1/tree/main/javafx-project)**  
 Project created to demonstrate classes, attributes and methods using Java. This project applies the basic concepts of the Java language together with JavaFX to create the user interface and JDBC to create the database where class instances are stored.
+
+**[Fraction Calculator](https://github.com/darloscaniel/programming-language-1/tree/main/fraction-calculator)**  
+Fraction calculator created with Java to reinforce basic language concepts and practice programming logic.
    
